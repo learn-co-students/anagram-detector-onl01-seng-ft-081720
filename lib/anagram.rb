@@ -10,7 +10,7 @@ class Anagram
 
     def match(words)
         result = []
-        sorted = words.collect { | word | word.chars.sort.join}
+        sorted = words.collect { | word | word.split('').sort.join('') }
         sorted_word = @word.chars.sort.join
         sorted.each.with_index do | element, i |
             if element == sorted_word
