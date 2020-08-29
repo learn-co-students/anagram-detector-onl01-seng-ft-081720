@@ -20,10 +20,7 @@ attr_accessor :match_array
         @match_array
     end
 
-    def detect(array)
-        
 
-    end
 
 
 
